@@ -1,0 +1,12 @@
+#ifndef PASPERFLIB_GLOBAL_H
+#define PASPERFLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PASPERFLIB_LIBRARY)
+#  define PASPERFLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define PASPERFLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PASPERFLIB_GLOBAL_H
